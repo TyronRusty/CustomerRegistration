@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Add Book</h1>
+<!--      bookForm-->
+
+<form action="#"
+      th:action="@{/books}"
+      th:object="${book}"
+      method="post">
+    <label for="title">cover</label>
+
+
+    <input value="${title}" type="text" th:field="*{title}" id="title" placeholder="Title">
+    <input value="$cover" type="text" th:field="*{cover}" id="cover" placeholder="cover">
+    <input value="${author}" type="text" th:field="*{author}" id="author" placeholder="author">
+    <input value="${rating}" type="text" th:field="*{rating}" id="rating" placeholder="rating">
+    <input value="${status}" type="text" th:field="*{status}" id="status" placeholder="status">
+    <input  value="${comment}" type="text" th:field="*{comment}" id="comment" placeholder="comment">
+
+
+
+    <span th:if="${#fields.hasErrors('title')}" th:errors="*{title}"></span>
+    <input type="submit" value="Add Book">
+</form>
+</body>
+</html>
+
+
