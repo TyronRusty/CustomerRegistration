@@ -10,16 +10,22 @@
 
 <form action="#"
       th:action="@{/books}"
-      th:object="${book}"
+      th:object="${bookForm}"
       method="post">
     <label for="title">cover</label>
 
-
-    <input value="${title}" type="text" th:field="*{title}" id="title" placeholder="Title">
-    <input value="$cover" type="text" th:field="*{cover}" id="cover" placeholder="cover">
+    <input value="${cover}" type="text" th:field="*{cover}" id="cover" placeholder="cover">
+    <input value="${title}" type="text" th:field="*{title}" id="title" placeholder="title">
     <input value="${author}" type="text" th:field="*{author}" id="author" placeholder="author">
     <input value="${rating}" type="text" th:field="*{rating}" id="rating" placeholder="rating">
-    <input value="${status}" type="text" th:field="*{status}" id="status" placeholder="status">
+
+    <select th:field="*{status}" id="status" class="form-select" >
+        <option value="" selected>select status</option>
+        <option value="1">Read</option>
+        <option value="2">Currently reading</option>
+        <option value="3">To read</option>
+    </select>
+
     <input  value="${comment}" type="text" th:field="*{comment}" id="comment" placeholder="comment">
 
 

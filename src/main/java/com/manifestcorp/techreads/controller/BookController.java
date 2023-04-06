@@ -42,5 +42,9 @@ public class BookController {
         mav.addObject("book",book);
         return mav;
     }
-
+    @GetMapping("/deleteBook/{id}")
+    public String deleteBook(@PathVariable ("id") long id) {
+        bookRepository.deleteById(id);
+        return "redirect:/books";
+    }
 }

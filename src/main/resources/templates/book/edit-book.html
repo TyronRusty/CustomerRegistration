@@ -14,18 +14,33 @@
       method="post">
   <label for="title">cover</label>
 
-  <input value="${id}" type="text" th:field="*{id}" id="id" >
-
+  <input value="${id}" type="text" th:field="*{id}" id="id" readonly >
+  <label for="title">Title</label>
   <input value="${title}" type="text" th:field="*{title}" id="title" >
+  <label for="cover">cover</label>
   <input value="$cover" type="text" th:field="*{cover}" id="cover" >
+
+  <label for="author">author</label>
   <input value="${author}" type="text" th:field="*{author}" id="author" >
+
+  <label for="rating">rating</label>
   <input value="${rating}" type="text" th:field="*{rating}" id="rating" >
-  <input value="${status}" type="text" th:field="*{status}" id="status" >
+
+  <label for="status">status</label>
+  <select th:field="*{status}" id="status" class="form-select" >
+    <option value="" selected>select status</option>
+    <option value="1">Read</option>
+    <option value="2">Currently reading</option>
+    <option value="3">To read</option>
+  </select>
+
+  <label for="comment">comment</label>
   <input  value="${comment}" type="text" th:field="*{comment}" id="comment" >
 
 
 
-  <input type="submit" value="Add Book">
+  <input type="submit" value="save">
+  <input th:href="@{/books/books.html}" type="submit" value="cancel">
 </form>
 </body>
 </html>
