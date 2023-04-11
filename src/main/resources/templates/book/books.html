@@ -33,20 +33,22 @@
 
     <tr th:each="book: ${books}">
         <td  th:text="${book.id}"></td>
-        <td  th:text="${book.cover}"></td>
+        <td th:href="${book.cover}">
+            <img th:src="${book.cover}" alt="Book Cover" width="100">
+        </td>
         <td th:text="${book.title}"></td>
         <td th:text="${book.author}"></td>
         <td th:text="${book.rating}"></td>
         <td th:text="${book.status}"></td>
         <td th:text="${book.comment}"></td>
         <td>
-        <a th:href="@{'books/showUpdateForm/' +${book.id}}" class="btn btn-info" type="submit" >edit</a>
+        <a th:href="@{'books/showUpdateForm/' +${book.id}}" class="btn btn-primary" type="submit" >Update</a>
+            </td>
+<td>
+            <a th:href="@{'books/deleteBook/' +${book.id}}" class="btn btn-danger" type="submit" >Delete</a>
 
-            <a th:href="@{'books/deleteBook/' +${book.id}}">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
-                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
-            </svg>
-            </a>
+
+
         </td>
 
     </tr>

@@ -12,21 +12,36 @@
       th:action="@{/books}"
       th:object="${bookForm}"
       method="post">
-    <label for="title">cover</label>
-
+    <div class="form-group p-2 " style = "padding-bottom: 1em;" >
+    <label for="cover">cover</label>
     <input value="${cover}" type="text" th:field="*{cover}" id="cover" placeholder="cover">
+    </div>
+    <div class="form-group p-2"style = "padding-bottom: 1em;" >
+     <label for="title">Title</label>
     <input value="${title}" type="text" th:field="*{title}" id="title" placeholder="title">
+    </div>
+    <div class="form-group p-2" style = "padding-bottom: 1em;" >
+   <label for="author">author</label>
     <input value="${author}" type="text" th:field="*{author}" id="author" placeholder="author">
+    </div>
+    <div class="form-group p-2" style = "padding-bottom: 1em;" >
+    <label for="rating">rating</label>
     <input value="${rating}" type="text" th:field="*{rating}" id="rating" placeholder="rating">
-
+    </div>
+    <div class="form-group p-2" style = "padding-bottom: 1em;" >
+   <label for="status">status</label>
     <select th:field="*{status}" id="status" class="form-select" >
         <option value="" selected>select status</option>
         <option value="1">Read</option>
         <option value="2">Currently reading</option>
         <option value="3">To read</option>
     </select>
+    </div>
+    <div class="form-group p-2" style = "padding-bottom: 1em;" >
+    <label for="comment">Comment</label>
+        <textarea th:field="*{comment}" id="comment" rows="4" cols="50" placeholder="Comment"/>
 
-    <input  value="${comment}" type="text" th:field="*{comment}" id="comment" placeholder="comment">
+    </div>
 
 
 

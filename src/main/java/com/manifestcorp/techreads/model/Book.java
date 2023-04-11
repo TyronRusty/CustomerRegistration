@@ -10,8 +10,8 @@ import lombok.*;
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
-@Getter
-@Setter
+@Data
+@Builder
 public class Book {
    @Id
    @GeneratedValue(strategy = GenerationType.AUTO)
@@ -33,16 +33,16 @@ public class Book {
 //    public void setId(Long id) { this.id = id; }
 //    public String getTitle() { return title; }
 //    public void setTitle(String title) { this.title = title; }
-  public Book(String title) { this.title = title; }
-
-    public Book(@NonNull String title, @NonNull String cover, @NonNull String author, @NonNull float rating, @NonNull String status, @NonNull String comment) {
-        this.title = title;
-        this.cover = cover;
-        this.author = author;
-        this.rating = rating;
-        this.status = status;
-        this.comment = comment;
-    }
+//  public Book(String title) { this.title = title; }
+//
+//    public Book(@NonNull String title, @NonNull String cover, @NonNull String author, @NonNull float rating, @NonNull String status, @NonNull String comment) {
+//        this.title = title;
+//        this.cover = cover;
+//        this.author = author;
+//        this.rating = rating;
+//        this.status = status;
+//        this.comment = comment;
+//    }
 
 
 //    public Book() {}
