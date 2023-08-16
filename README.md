@@ -17,8 +17,9 @@ https://www.simplilearn.com/tutorials/mysql-tutorial/mysql-workbench-installatio
 ```bash
   user : root
   password:root
-  
-```
+  ```
+ps: the password and user should be the one you have setup for your MySQL if you have an existing one
+
 3. download intellij : 
 
 https://www.jetbrains.com/idea/download/?section=windows
