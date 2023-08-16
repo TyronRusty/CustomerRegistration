@@ -49,3 +49,10 @@ https://www.jetbrains.com/idea/download/?section=windows
 ### Add Customer
 
 <img width="880" alt="addcustomer" src="https://github.com/TyronRusty/CustomerRegistration/assets/118769952/483d2ee9-f4f1-4f1b-8513-404d3e0a275b">
+
+
+
+## Video demo
+
+https://github.com/TyronRusty/CustomerRegistration/assets/118769952/77b103f1-f57a-4080-a50c-a3cbaae242cf
+
