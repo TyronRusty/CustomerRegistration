@@ -1,7 +1,7 @@
 
 # Customer Registration
 
-this is simple customer registartion web app , that allow to add , delete and edit customers records
+this is  a simple customer registartion web app , that allows to add , delete and edit customers records
 
 ## Installation
 
@@ -39,9 +39,10 @@ https://www.jetbrains.com/idea/download/?section=windows
 - the projet will be runing on : http://localhost:8080/customers
 
 
-
+## Screenshots
  
 <img width="928" alt="CUSTOMERS" src="https://github.com/TyronRusty/CustomerRegistration/assets/118769952/a113efaa-5b9c-4ade-9f5a-885aa4d61b3b">
+
 
 
 <img width="880" alt="addcustomer" src="https://github.com/TyronRusty/CustomerRegistration/assets/118769952/483d2ee9-f4f1-4f1b-8513-404d3e0a275b">
