@@ -54,5 +54,7 @@ https://www.jetbrains.com/idea/download/?section=windows
 
 ## Video demo
 
-https://github.com/TyronRusty/CustomerRegistration/assets/118769952/77b103f1-f57a-4080-a50c-a3cbaae242cf
+
+https://github.com/TyronRusty/CustomerRegistration/assets/118769952/fd0b1980-266e-4b00-b722-ee238f1a9baa
+
 
