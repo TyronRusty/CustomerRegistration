@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.manifestcorp</groupId>
-	<artifactId>techreads</artifactId>
+	<artifactId>Customer</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>techreads</name>
+	<name>Customer</name>
 	<description>Tech Reads</description>
 	<properties>
 		<java.version>17</java.version>
