@@ -38,10 +38,10 @@ https://www.jetbrains.com/idea/download/?section=windows
 
 - To deploy this project run the maven project on intellij
 - the projet will be runing on : http://localhost:8080/customers
--  MySQL has to be running for the web app to work
+-  MySQL and intelliJ have to be running for the web app to work, terminating the intelliJ will stop the server.
 -  after initially running the web app , refrech the schema on MySQL workbench and the "customerdb" schema will appear.
   
-## Notes for mac users :
+## Note for mac users :
 follow this link to download MySQL server and workbench , the process is different from windows 
 link : https://www.youtube.com/watch?v=DVVVSlGDpuw
 - While installing MySQL you will prompted to inter a password.(save the passord for later)
