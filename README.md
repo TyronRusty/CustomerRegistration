@@ -43,7 +43,7 @@ https://www.jetbrains.com/idea/download/?section=windows
 
  ### Customers List
  
-<img width="906" alt="customersview" src="https://github.com/TyronRusty/CustomerRegistration/assets/118769952/a869ee4f-3d77-4861-9cf9-e91735d80db9">
+<img width="928" alt="CUSTOMERS" src="https://github.com/TyronRusty/CustomerRegistration/assets/118769952/e850385d-94e9-48e3-8a11-3b779ed64ef4">
 
 
 ### Add Customer
