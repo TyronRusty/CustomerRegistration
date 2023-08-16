@@ -37,7 +37,14 @@ https://www.jetbrains.com/idea/download/?section=windows
 
 - To deploy this project run the maven project on intellij
 - the projet will be runing on : http://localhost:8080/customers
-
+-  MySQL has to be running for the web app to work
+  
+## Notes for mac users :
+follow this link to download MySQL server and workbench , the process is different from windows 
+link : https://www.youtube.com/watch?v=DVVVSlGDpuw
+- While installing MySQL you will prompted to inter a password.(save the passord for later)
+- open the project on IntelliJ and go under src/main/resource/application.properties and change the "spring.datasource.password" to be the password from the above step
+- this is what the project will display before the password change "spring.datasource.password=root" just replace "root" by your password.
 
 ## Screenshots
 
